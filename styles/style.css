@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	font-family: "Poppins", sans-serif;
+	color: #4c3d3f;
+	background-color: #ffeded;
+}
+
+.container {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	gap: 4rem;
+	/* align-items: flex-end; */
+}
+
+.content {
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+.rules-heading {
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+	/* text-transform: uppercase; */
+}
+
+.rules {
+	font-size: 1.4rem;
+	margin-bottom: 2.5rem;
+	color: #665254;
+}
+
+.choose-player {
+	font-size: 1.7rem;
+	font-weight: 600;
+	margin-bottom: 1.3rem;
+}
+
+.choose-player.error {
+	color: red;
+}
+
+.players {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+button {
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding: 1rem 1.5rem;
+	margin-bottom: 2rem;
+	border-radius: 3px;
+	color: #4c3d3f;
+	background-color: #ffd6db;
+	border: none;
+}
+
+.scores {
+	display: flex;
+	gap: 8rem;
+	font-size: 1.5rem;
+}
+
+.score {
+	font-size: 1.7rem;
+}
+
+.score span {
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+.fish-icon {
+	height: 25px;
+}
+
+.player {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid transparent;
+}
+
+.player.active {
+	border-bottom: 1px solid #665254;
+}
+
+.char {
+	height: 70px;
+	transition: all 0.3s ease;
+}
+
+.char:hover {
+	transform: translateY(-10px);
+}
+
+canvas {
+	border: 2px solid #cca3a8;
+}
+
+.hide {
+	display: none;
+}

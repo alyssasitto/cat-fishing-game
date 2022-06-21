@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<h1>Cat fishing</h1>
+				<p class="rules-heading">Rules:</p>
+				<p class="rules">
+					Try to catch as many
+					<img src="/images/fish.png" alt="fish" class="fish-icon" /> as
+					possible!<br />
+					Watch out for the
+					<img src="/images/dead-fish.png" alt="dead fish" class="fish-icon" />
+					!
+				</p>
+				<p class="choose-player">Choose your player</p>
+				<div class="players">
+					<div class="player char1">
+						<img
+							src="/images/grey-kitty.png"
+							alt="grey cat"
+							class="char grey-cat"
+						/>
+					</div>
+					<div class="player char2">
+						<img
+							src="/images/orange-kitty.png"
+							alt="orange cat"
+							class="char orange-cat"
+						/>
+					</div>
+				</div>
+
+				<button class="btn">Start Game</button>
+				<div class="scores">
+					<p class="score">Score: <span>0</span></p>
+					<p class="score">HighScore: <span>0</span></p>
+				</div>
+			</div>
+			<div>
+				<canvas id="canvas" height="600px" width="700px"> </canvas>
+				<img
+					src="/images/grey-kitty.png"
+					alt="grey cat"
+					id="grey-cat"
+					class="hide"
+				/>
+				<img
+					src="/images/orange-kitty.png"
+					alt="orange cat"
+					id="orange-cat"
+					class="hide"
+				/>
+				<img src="/images/fish.png" alt="fish" id="fish" class="hide" />
+				<img
+					src="/images/dead-fish.png"
+					alt="dead fish"
+					id="dead-fish"
+					class="hide"
+				/>
+			</div>
+		</div>
+		<script src="/javascript/script.js"></script>
+	</body>
+</html>
