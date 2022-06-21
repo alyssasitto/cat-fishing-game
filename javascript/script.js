@@ -9,8 +9,8 @@ const choose = document.querySelector(".choose-player");
 
 const greyCat = document.querySelector(".grey-cat");
 const orangeCat = document.querySelector(".orange-cat");
-const fish = document.querySelector("#fish");
-const deadFish = document.querySelector("#dead-fish");
+const orangeFishImg = document.querySelector(".fish");
+const deadFishImg = document.querySelector(".dead-fish");
 
 const player1 = {
 	image: greyCat,
@@ -32,6 +32,26 @@ const player2 = {
 	speed: 5,
 	dx: 0,
 	dy: 0,
+};
+
+const fish = {
+	image: orangeFishImg,
+	width: 70,
+	height: 40,
+	x: 0,
+	y: -30,
+	dx: 0,
+	dy: 3,
+};
+
+const deadFish = {
+	image: deadFishImg,
+	width: 60,
+	height: 40,
+	x: 80,
+	y: -30,
+	dx: 0,
+	dy: 3,
 };
 
 function choosePlayer() {
@@ -106,8 +126,33 @@ function newPos() {
 	detectWalls();
 }
 
+function createFish() {
+	ctx.drawImage(fish.image, fish.x, fish.y, fish.width, fish.height);
+}
+
+function createDeadFish() {
+	ctx.drawImage(
+		deadFish.image,
+		deadFish.x,
+		deadFish.y,
+		deadFish.width,
+		deadFish.height
+	);
+}
+
+function moveFish() {
+	fish.y += fish.dy;
+	deadFish.y += deadFish.dy;
+}
+
 function updateGame() {
 	clear();
+
+	moveFish();
+
+	createFish();
+
+	createDeadFish();
 
 	playerChosen();
 
