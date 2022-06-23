@@ -26,6 +26,8 @@ const angrySound = new Audio();
 angrySound.src = "./sounds/Angry-cat-sound.mp3";
 const bgImg = new Image();
 bgImg.src = "./images/pink-bg1.png";
+const bgMusic = new Audio();
+bgMusic.src = "./sounds/bg-audio.mp3";
 
 const player1 = {
 	image: greyCat,
@@ -236,6 +238,7 @@ function detectFish() {
 				i--;
 			} else {
 				angrySound.play();
+				bgMusic.pause();
 				fishArr.splice(i, 1);
 				i--;
 
@@ -277,6 +280,7 @@ function startGame() {
 	if (totalFrames === 0) {
 		meowSound.play();
 	}
+	bgMusic.play();
 
 	totalFrames++;
 
