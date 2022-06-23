@@ -347,12 +347,17 @@ button.addEventListener("click", function () {
 	}
 });
 
-// restart.addEventListener("click", function () {
-// 	player1.x = canvas.width / 2 - 50;
-// 	player1.y = canvas.height / 2 + 230;
-// 	player2.x = canvas.width / 2 - 50;
-// 	player2.y = canvas.height / 2 + 230;
-// 	// choosePlayer();
-// 	clear();
-// 	startGame();
-// });
+restart.addEventListener("click", function () {
+	player1.x = canvas.width / 2 - 50;
+	player1.y = canvas.height / 2 + 230;
+	player2.x = canvas.width / 2 - 50;
+	player2.y = canvas.height / 2 + 230;
+	// choosePlayer();
+	// clear();
+	score.innerHTML = scoreNum;
+	animationStopped = false;
+	totalFrames = 0;
+	console.log("before startGame");
+	startGame();
+	console.log("after startGame");
+});
