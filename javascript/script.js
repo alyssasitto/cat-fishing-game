@@ -21,11 +21,11 @@ const orangeCat = document.querySelector(".orange-cat");
 const orangeFishImg = document.querySelector(".fish");
 const deadFishImg = document.querySelector(".dead-fish");
 const meowSound = new Audio();
-meowSound.src = "/sounds/Cat-sound.mp3";
+meowSound.src = "../sounds/Cat-sound.mp3";
 const angrySound = new Audio();
-angrySound.src = "/sounds/Angry-cat-sound.mp3";
+angrySound.src = "../sounds/Angry-cat-sound.mp3";
 const bgImg = new Image();
-bgImg.src = "/images/pink-bg1.png";
+bgImg.src = "../images/pink-bg1.png";
 
 const player1 = {
 	image: greyCat,
