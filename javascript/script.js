@@ -261,7 +261,8 @@ function endGame() {
 	// clear();
 	animationStopped = true;
 	highScore.innerHTML = scoreNum;
-	score.innerHTML = 0;
+	scoreNum = 0;
+	score.innerHTML = scoreNum;
 	fishArr = [];
 	player1.x = -100;
 	player1.y = -100;
@@ -280,6 +281,7 @@ function startGame() {
 	if (totalFrames === 0) {
 		meowSound.play();
 	}
+
 	bgMusic.play();
 
 	totalFrames++;

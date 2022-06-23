@@ -80,6 +80,7 @@ button {
 	color: #4c3d3f;
 	background-color: #ffd6db;
 	border: none;
+	outline: none;
 }
 
 .start-game.disabled {
