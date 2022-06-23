@@ -11,7 +11,7 @@ body {
 	justify-content: center;
 	font-family: "Poppins", sans-serif;
 	color: #4c3d3f;
-	background-color: #ffeded;
+	background-color: #ffe6e9;
 }
 
 .container {
@@ -64,6 +64,13 @@ h1 {
 	margin-bottom: 1.5rem;
 }
 
+.buttons {
+	display: flex;
+	gap: 1rem;
+
+	/* flex-direction: column; */
+}
+
 button {
 	font-size: 1.8rem;
 	font-weight: 600;
@@ -73,6 +80,14 @@ button {
 	color: #4c3d3f;
 	background-color: #ffd6db;
 	border: none;
+}
+
+.start-game.disabled {
+	background-color: rgba(199, 194, 194, 0.225);
+}
+
+.btn {
+	flex: 1 1;
 }
 
 .scores {
@@ -113,7 +128,7 @@ button {
 }
 
 canvas {
-	border: 2px solid #cca3a8;
+	border: 2px solid #ffd6db;
 }
 
 .hide {
